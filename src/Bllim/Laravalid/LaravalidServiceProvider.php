@@ -5,7 +5,7 @@ namespace Bllim\Laravalid;
 use Illuminate\Support\ServiceProvider;
 
 class LaravalidServiceProvider extends ServiceProvider
-
+{
 	/**
 	 * Indicates if loading of the provider is deferred.
 	 *
@@ -39,7 +39,7 @@ class LaravalidServiceProvider extends ServiceProvider
 	public function register()
 	{
 		$this->registerResources();
-        
+
         if(!isset($this->app['html']))
         {
 			$this->app->bindShared('html', function($app)
