@@ -11,6 +11,8 @@ $user = $builder->build();
 //$variation = $client->variationDetail('api.billing_level_period_garage', $user);
 $variation = $client->variationDetail('radeks-test-flag', $user);
 
+$variation = $client->variationDetail('api.billing_level_period_garage', $user);
+
 if ($client->variation('radeks-test-flag', $user, false)) {
   // application code to show the feature
   echo 'Showing your feature to ' . $user->getKey() . '\n';
